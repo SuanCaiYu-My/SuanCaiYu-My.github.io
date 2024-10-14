@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+    <style>
+        /* 通用选择器 */
+        *{
+            font-family: 'kaiti';
+        }
+        /* 元素选择器 */
+        h2{
+            color: aqua;
+        }
+        /* 类选择器 */
+        .highlight{
+            background-color: yellow;
+        }
+        /* ID 选择器 */
+        #hearder{
+            font-size: 35px;
+        }
+        /* 子元素选择器 */
+        .father > .son{
+            color: yellowgreen;
+        }
+        /* 后代选择器 */
+        .father p{
+            color: brown;
+            font-size: larger;
+        }
+        /*相邻选择器*/
+        h3 + p{
+            background-color: red;
+        }
+        /*伪类选择器*/
+        #element:hover {
+            background-color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>css选择器</h1>
+    <h2>元素选择器</h2>
+    <h3 class="highlight">这是一个类选择器，只会选择highlight类的</h3>
+    <h3>这是一个类选择器</h3>
+    <h4 id="hearder">这是id选择器</h4>
+    <div class="father">
+        <p class="son">
+            这是一个子元素选择器
+        </p>
+        <div>
+            <p class="grandson">这是一个后代选择器实例</p>
+        </div>
+    </div>
+    <p> 上面的p标签</p>
+    <h3>相邻选择器示例</h3>
+    <p>下面的p标签</p>
+
+    <h3 class="element">伪类选择器示例</h3>
+    <p>程序代码示例</p>
+    <img src="css选择器.png" alt="">
+</body>
+</html>

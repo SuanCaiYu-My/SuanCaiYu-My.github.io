@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css定位.html</title>
+    <style>
+        .box1{
+            height: 350px;
+            background-color: aqua;
+        }
+        .box-normal{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+        }
+        .box-relative{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            position:relative;
+            left: 100px;
+            top: 50px;
+        }
+        .box2{
+            height: 350px;
+            background-color: yellow;
+        }
+        .box-absolute{
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            position:absolute;
+            left: 120px;
+        }
+        .box-fixed{
+            width:100px;
+            height:100px;
+            background-color:brown;
+            position: fixed;
+            right: 0;
+            top:300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>css定位.html</h1>
+    <h2>相对定位</h2>
+    <div class="box1">
+        <div class="box-normal"></div>
+        <div class="box-relative"></div>
+        <div class="box-normal"></div>
+    </div>
+    <h2>绝对定位</h2>
+    <div class="box2">
+        <div class="box-normal"></div>
+        <div class="box-absolute"></div>
+        <div class="box-normal"></div>
+    </div>
+    <h2>固定定位</h2>
+    <div class="box-fixed"></div>
+    <p>程序代码示例</p>
+    <img src="css定位.png" alt="">
+
+</body>
+</html>
