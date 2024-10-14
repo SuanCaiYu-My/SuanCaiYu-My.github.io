@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS函数</title>
+</head>
+<body>
+    <script>
+        function hello(){
+            console.log('hello,word');
+        }
+        hello();
+        function hellow_with_return(){
+            return 'Hello,world!'
+        }
+        let a = hellow_with_return();
+        console.log(a) ;
+        console.log(hellow_with_return());
+        
+        function hellow_with_params(name) {
+            console.log('hello,'+name);            
+        }
+        hellow_with_params('ruhua')
+
+        let global_var ='全局变量';
+        function local_var_function(){
+        let local_var ='局部变量';
+        console.log('函数内打印全局变量:'+ global_var);
+        console.log('函数内打印局部变量:'+ local_var);
+        }
+        local_var_function();
+        console.log('全局打印全局变量:'+global_var);
+        /* console.log('全局打印局部变量: '+ local_var);   函数外local_var ='局部变量'无定义报错 */
+    </script>
+    <div>
+        <p>程序代码示例</p>
+        <img src="JS函数.png" alt="">
+    </div>
+</body>
+</html>
