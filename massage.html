@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th,td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px ;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style=" text-align: center;">留言</h1>
+    <p style="text-align: center;">编辑和删除操作都未开通</p>
+    <button onclick="addrow()">新增数据</button>
+    <table id="table">
+        <tr>
+            <th>昵称</th>
+            <th>留言信息</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>酸菜鱼本鱼</td>
+            <td>没有什么可以将你打败，因为你从未成功过。</td>
+            <td>
+                <button onclick="editrow(this)">编辑</button><button onclick="deleterow(this)">删除</button>
+            </td>
+        </tr>
+    </table>
+    <script src="massage.js"></script>
+</body>
+</html>

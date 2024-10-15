@@ -15,11 +15,15 @@ function addrow() {
     var actioncol = newrow.insertCell(2); 
     
     //修改节点文本内容
-    namecol.innerHTML = '未命名' ;
-    phonecol.innerHTML = '无联系方式' ;
+
+    var inputName =prompt("请输入昵称:");
+    var inputPhone = prompt("请输入留言");
+    namecol.innerHTML = inputName ;
+    phonecol.innerHTML = inputPhone ;
     actioncol.innerHTML = '<button onclick="editrow(this)">编辑</button><button onclick="deleterow(this)">删除</button>' ;
 }
 
+/*
 //删除数据函数
 function deleterow(button){
     //console.log(button);
@@ -43,3 +47,4 @@ function editrow(button) {
 
     
 }
+    */
