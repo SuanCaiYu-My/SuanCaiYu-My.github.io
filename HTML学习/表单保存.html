@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>保存表单数据到本地存储</title>
+  </head>
+  <body>
+    <h1>保存表单数据到本地存储</h1>
+
+    <form id="myForm">
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="name">
+      <br>
+      <label for="email">电子邮件：</label>
+      <input type="email" id="email" name="email">
+      <br>
+      <input type="submit" value="提交">
+      <button id="clearButton">清除数据</button>
+    </form>
+
+    <script>
+      // 获取表单元素
+      const form = document.getElementById('myForm');
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const clearButton = document.getElementById('clearButton');
+
+      // 监听表单提交事件
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        localStorage.setItem('name', nameInput.value);
+        localStorage.setItem('email', emailInput.value);
+      });
+
+      // 在页面加载时加载已保存的数据
+      window.addEventListener('load', function() {
+        const savedName = localStorage.getItem('name');
+        const savedEmail = localStorage.getItem('email');
+
+        if (savedName) {
+          nameInput.value = savedName;
+        }
+
+        if (savedEmail) {
+          emailInput.value = savedEmail;
+        }
+      });
+
+      // 清除已保存的数据
+      clearButton.addEventListener('click', function() {
+        localStorage.clear();
+      });
+    </script>
+  </body>
+</html>
