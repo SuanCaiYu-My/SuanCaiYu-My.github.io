@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <title>初识unity3D</title>
+    <style>
+    body{
+            background-image: url(../image/3.png);
+            background-attachment: fixed;
+            background-position: center;
+            background-size:100% 100%;
+        }
+    </style>
+</head>
+<body >
+    <div id="main" style="color: white; " >
+        <h1 >初识unity3D</h1>
+        <ul>
+            <li>基础：
+                <ol>
+                    <li>游戏对象：Unity中的基本对象（物体）</li>
+                    <li>场景：游戏对象位于的3D环境</li>
+                    <li>组件功能块：游戏对象的行为
+                        <ol type="A">
+                            <li>Transfrom：确定游戏对象的 Position（定位）、Rotation（旋转） 和 Scale（范围）。</li>
+                            <li>Mesh Filter：此组件定义 3D 游戏对象的形状。</li>
+                            <li>Mesh Renderer（网格渲染器）：此组件定义 Mesh Filter 定义的 3D 形状的外观。</li>
+                            <li>Cameras:专门配置的游戏对象，用于捕获世界并向玩家显示。播放视角</li>
+                            <li>Rigidbody：刚体允许游戏对象与物理系统交互，包括重力和碰撞。</li>
+                            <li>Colliders：此组件定义 3D 游戏对象的形状，用于物理碰撞。</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>脚本：支持 C# 编程语言，能接收输入；能设置打开相关场景，以创建完整的游戏循环；根据其他变量影响游戏对象的组件，例如其变换、动画或渲染器。</li>
+            <p style="font-size: 10px;">(C#语言需学习)</p>
+            <li>3D 资产:现成的3D模型，也可以使用 Probuilder 等工具在 Unity 中创建模型。
+                <ol>
+                    <li>导入3D模型文件：Unity 使用 .fbx 模型格式。您还可以使用其他常见的原生模型格式（ .max, .blend, .mb, .ma等），导入后Unity会自动转化为.fbx</li>
+                    <li>渲染网格：向游戏对象添加 Mesh Filter，将 Mesh Renderer 添加到具有 Mesh Filter 组件的任何游戏对象。</li>
+                    <li>材质：使用 Materials 定义</li>
+                </ol>
+            </li>
+            <li>构建游戏内环境：在 Unity Editor 中同时设计和构建环境，也可以在 Unity 之外设计环境，然后在 Unity 中构建它。除手动放置模型外，Unity Editor 还包括一组内置的地形功能，允许您向游戏添加地形。在 Editor 中，您可以创建多个地形瓦片，调整地形的高度或外观，并向其添加树木或草地。</li>
+            <li>动画：
+                <ol>
+                    <li>导入动画</li>
+                    <ol type="I">
+                        <li>可以导入在其他程序中制作的动画。</li>
+                        <li>也可以直接在 Editor 中为模型添加动画效果。</li>
+                        <li>使用 Animation 窗口直接在 Unity 中创建和修改动画剪辑。</li> 
+                        <li>使用 Keyframe animation 向场景中的游戏对象添加简单的动画，例如更改其位置、大小或旋转。</li>
+                    </ol>
+                    <li>控制动画：可以使用 Animator 类直接在脚本中调用它们，或者在 Animator 窗口中创建和修改 Animator 控制器。
+                        <ol type="I">
+                            <li>创建并设置 Animation Controller</li>
+                            <li>使用 Animation Clips 创建  Animator States </li>
+                            <li>创建 Animator Parameters,，脚本可以访问这些参数或为其分配值</li>
+                            <li>创建 Animator Transitions ，用于指定状态何时应更改以及状态之间的混合需要多长时间的条件（基于参数）</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>图形：
+                <ol>
+                    <li>照明的设置：
+                        <ol type="I">
+                            <li>创建光源：在 Hierarchy 窗口中右键单击以打开 GameObject 菜单，选择 Light，然后选择要添加到场景中的 Light 类型。</li>
+                            <li>调整光源</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>音频：使用第三方软件创建音频，并使用建议的设置将其导入 Unity。</li>
+            <li>物理：定义游戏对象在现实世界中碰撞时的行为方式。（受力）设置如下
+                <ol>
+                    <li>添加 Rigidbody 组件</li>
+                    <li>使用 Colliders 使游戏对象能够与场景中的其他游戏对象交互。</li>
+                    <li>为了能够在两个游戏对象相交时在代码中调用函数，请添加 Collider 并将其设为trigger。</li>
+                </ol>
+            </li>
+            <li>用户界面</li>
+            </ul>
+
+<p style=" position:absolute;right: 0;">2024年10月17日</p>
+  </div>
+</body>
+</html>

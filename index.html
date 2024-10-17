@@ -5,6 +5,14 @@
     <meta name="viewport" >
     <title>SuanCaiYu-My</title>
     <style>
+        /* 使用CSS使一张背景图像在滚动期间保持固定
+        body{
+            background-image: url(../image/1.png);
+            background-attachment: fixed;
+            background-size:100% 100%;
+        }
+            */
+
         .main{
             background:#ecf0f1 ;
             font: bolder 20px 'kaiti';
@@ -22,13 +30,16 @@
           height: 200px;
         }
 
+
     </style>
 </head>
 <body>
     <div class="main">
-        <div class="background">
+
+         <div class="background">
             <img style="max-width:100%;overflow:hidden;overflow:hidden;border-radius: 2%" src="image\background.jpg" alt="图片不能加载"> 
-        </div>
+        </div> 
+
         <div class="myself" style="height: 250px;">
             <img src="image\myself.jpg" style="max-width:5%;position:relative;top:-18%;border-radius: 10%;" alt="头像不能加载">
             <div class="introduce" style="position:relative;top: -18%">
