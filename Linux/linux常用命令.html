@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linux常用命令</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+      background-image: url(../image/3.png);
+      background-attachment: fixed;
+      background-position: center;
+      background-size:100% 100%;
+
+  }
+</style>
+</head>
+<body style="color: white; ;text-align: center" >
+  <h1>linux常用命令</h1>
+  <table border="1" align="center" valign="center">
+    <tr>
+      <th>命令</th>
+      <th>作用</th>
+      <th>使用方式</th>
+    </tr>
+    <tr>
+      <td>Man命令</td>
+      <td>详细了解某命令</td>
+      <td>［root @teacher root］# man ls（了解ls命令的详细信息）</td>
+    </tr>
+    <tr>
+      <td>pwd 命令</td>
+      <td>“print working directory”（打印工作目录）</td>
+      <td>[root@teacher apache]# pwd（打印当前位置） </td>
+    </tr>
+    <tr>
+      <td>cd 命令</td>
+      <td>改变工作目录</td>
+      <td rowspan="1">
+        <table table border="1" align="center" valign="center">
+          <tr>
+            <th>使用方式</th>
+            <th>作用</th>
+          </tr>
+          <tr>
+            <td>cd~</td>
+            <td>去你的登录目录</td>
+          </tr>
+          <tr>
+            <td>cd/</td>
+            <td>去整个系统的根目录</td>
+          </tr>
+          <tr>
+            <td>cd/root</td>
+            <td>去根用户的主目录;你必须是根用户才能访问该目录</td>
+          </tr>
+          <tr>
+            <td>cd/home</td>
+            <td>去home目录，用户的登录目录通常贮存在此处</td>
+          </tr>
+          <tr>
+            <td>cd..</td>
+            <td>返回上一级</td>
+          </tr>
+          <tr>
+            <td>cd/文件夹1/文件夹2</td>
+            <td>去文件夹2</td>
+          </tr>
+          <tr>
+            <td>cd../../文件夹1/文件夹2</td>
+            <td>返回上两级后去文件夹2</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>ls 命令</td>
+      <td>显示当前内容</td>
+      <td>
+        <ol style="text-align: left; ">
+          <li>-a — 全部（all）。列举目录中的全部文件，包括隐藏文件（.filename）。位于这个列表的起首处的 .. 和 . 依
+            次是指父目录和你的当前目录
+          </li>
+          <li>-l — 长（long）。列举目录内容的细节，包括权限（模式）、所有者、组群、大小、创建日期、文件是否是到
+            系统其它地方的链接，以及链接的指向。 
+          </li>
+          <li>-F — 文件类型（File type）。在每一个列举项目之后添加一个符号。这些符号包括：/ 表明是一个目录；@ 表
+            明是到其它文件的符号链接；* 表明是一个可执行文件。             
+          </li>
+          <li>-r — 逆向（reverse）。从后向前地列举目录中的内容。 </li>
+          <li>-R — 递归（recursive）。该选项递归地列举所有目录（在当前目录之下）的内容。</li>
+          <li>-S — 大小（size）。按文件大小排序</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>locate 命令</td>
+      <td>搜寻文件或目录      </td>
+      <td>ocate finger(搜索文件或目录带finger的)</td>
+    </tr>
+    <tr>
+      <td>clear 命令</td>
+      <td>清除终端窗口</td>
+      <td>clear</td>
+    </tr>
+    <tr>
+      <td>cat 命令</td>
+      <td>示文件的内容（经常和more搭配使用），或者是将多个文件合并成一个文件。</td>
+      <td>-----</td>
+    </tr>
+    <tr>
+      <td>head 命令      </td>
+      <td>查看文件的开头部分</td>
+      <td>head -20 <文件名>   （阅读文件前20行）   </td>
+    </tr>
+    <tr>
+      <td>tail 命令      </td>
+      <td>查看文件结尾的十行</td>
+      <td>tail -20 <文件名>   （阅读文件后20行）</td>
+    </tr>
+    <tr>
+      <td>grep 命令      </td>
+      <td>文件中查找指定的字串</td>
+      <td>grep coffee 11.txt （在11.txt中查找coffee）     </td>
+    </tr>
+    <tr>
+      <td>chmod 命令</td>
+      <td>改变文件或目录的访问权限      </td>
+      <td>chmod o+w sneakers.txt （给其它人写入文件 sneakers.txt 的权限）</td>
+    </tr>
+    <tr>
+      <td>cp 命令      </td>
+      <td>cp(copy)命令可以将文件或目录复制到其他目录</td>
+      <td>cp <源> <目标></td>
+    </tr>
+    <tr>
+      <td>mv命令</td>
+      <td>移动文件</td>
+      <td>
+        <ol style="text-align: left; ">
+          <li>-i — 移动。</li>
+          <li>-f — 强制。移动文件有问题不报错。</li>
+          <li>-v — 详细。显示文件的移动进度。 </li>
+          <li>mv 111.txt  /home/newuser/sneakers.txt /home/newuser/tigger（移动所在目录的111.txt到tigger）</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>mkdir 命令      </td>
+      <td>建立目录</td>
+      <td>[root@teacher tmp]#mkdir datal（在系统中建立datal 子目录）</td>
+    </tr>
+    <tr>
+      <td>rm 命令      </td>
+      <td>删除目录中的文件或目录本身，对于链接文件，只是删除了该链接，原有文件保持不变。</td>
+      <td>rm 111.txt  （删除111.txt）    </td>
+    </tr>
+   
+</table>
+
+</body>
+</html>
