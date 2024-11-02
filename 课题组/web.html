@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片轮播</title>
+    <style>
+        /*
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+            */
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        img {
+            width: 100%;
+            display: none;
+        }
+        img.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <img src="5ab44225-9637-4d04-b7f3-339b73043c47.jpg" class="active" alt="Image 1">
+        <img src="65a6477d-812f-49b3-9051-23def5eedda0.jpg" alt="Image 2">
+        <img src="672b2835-82f3-4950-8b01-7c4b2fb65495.jpg" alt="Image 3">
+        <img src="d7497d6b-18f7-4804-8be7-0a620a454140.jpg" alt="Image 4">
+        <img src="dab4d270-358f-4eec-9ad1-e845b4af0604.jpg" alt="Image 5">
+    </div>
+
+<script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel img');
+    
+    function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+
+    setInterval(showNextImage, 3000);
+</script>
+</body>
+</html>
