@@ -2,77 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>梁彩平副教授课题组</title>
     
     <style>
-    body{
-        background-image: url(大校徽.png);
-        background-attachment: fixed;
-        background-position: center;
-        background-size:100% 100%;
+    .标题栏 {
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
         opacity: 0.9;
-        }
-    .标题栏上层{
-        background-color: #004FA2;
-        height: 20px;
-        border-radius: 5px;
-        
     }
-    .标题栏log{
+    .标题栏上层 {
+        background-color: #004FA2;
+        height: 1.5vh;
+    }
+    .标题栏log {
         background-color: #004FA2;
         display: flex;
-        text-align: center;
         align-items: center;
-        position: relative;
-        top: -10px;
-        font-size: 2rem;
-        z-index: 2;
+        font-size: 2vw;
+        padding: 0.1vh 0;
+        color: white;
     }
-    a{
+    .logo-container {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo-container img {
+        width: 90%;
+        height: auto;
+    }
+    .nav-items {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        right: 10px;
+    }
+    .nav-items a {
         text-decoration: none;
-        color: black;
-    }       
-    .item {
-        width:10%;
-        font-size: 1.5rem;
-        text-align: center;
-        align-items: center;
+        color: white;
+        font-size: 1.8vw;
         font-family: "kaiti";
-        }
-    
-</style>
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+        background-color: #004FA2;
+        width: 100%;
+        padding: 2vh 0;
+        opacity: 0.9;
+        color: white;
+    }
+    </style>
 </head>
-<body  >
+<body>
     <div>
-        <div class="标题栏上层"></div>
-        <div class="标题栏log">
-            <a href="首页.html" target="_blank">
-                <img style="height: 4rem; position: relative; left: 5%; "  src="课题组log.png" >
-            </a>
-            <div class="item" ><a href="首页.html" style="color: white;" target="_blank">首页</a></div>
-            <div class="item"><a href="课题组新闻.html" style="color: white;" target="_blank">小组新闻</a></div>      
-            <div class="item"><a href="课题组介绍.html" style="color: white;" target="_blank">小组介绍</a></div>
-            <div class="item"><a href="毕业生风采.html" style="color: white;" target="_blank">学生风采</a></div>
-            <div class="item"><a href="荣誉及奖励.html" style="color: white;" target="_blank">荣誉奖励</a></div>
-            <div class="item"><a href="学生论文.html" style="color: white;" target="_blank">学术论文</a></div>
-            <div class="item"><a href="教学工作.html" style="color: white;" target="_blank">教学工作</a></div>
-            <div class="item"><a href="文体与生活.html" style="color: white;" target="_blank">文体生活</a></div>     
-            <div class="item"><a href="联系我们.html" style="color: white;" target="_blank">联系我们</a></div>
+        <div class="标题栏">
+            <div class="标题栏上层"></div>
+            <div class="标题栏log">
+                <div class="logo-container">
+                    <a href="首页.html" target="_blank">
+                        <img src="课题组log.png" alt="课题组 logo">
+                    </a>
+                </div>
+                <div class="nav-items">
+                    <a href="首页.html" target="_blank">首页</a>
+                    <a href="课题组新闻.html" target="_blank">小组新闻</a>
+                    <a href="课题组介绍.html" target="_blank">小组介绍</a>
+                    <a href="毕业生风采.html" target="_blank">学生风采</a>
+                    <a href="荣誉及奖励.html" target="_blank">荣誉奖励</a>
+                    <a href="学生论文.html" target="_blank">学术论文</a>
+                    <a href="教学工作.html" target="_blank">教学工作</a>
+                    <a href="文体与生活.html" target="_blank">文体生活</a>
+                    <a href="联系我们.html" target="_blank">联系我们</a>
+                </div>
+            </div>
         </div>
-
-
-
-
-
-
-        <div class="footer" style="align-items: center;text-align: center;background-color: #004FA2; width: 100%;height: 130px;opacity: 0.9;">
-            <p style="font: bolder 40px 'kaiti' ;color: white;position: relative;top: 30px;">上海第二工业大学&智能制造与控制工程学院</p>
-            <p style="font: bolder 10px 'kaiti' ;position: relative;top: -10px;"> powered&emsp;by&emsp;SSPU&ensp;College&ensp;of&ensp;Intelligent&ensp;Manufacturing&ensp;and&ensp;Control&ensp;Engineering&ensp;Li&ensp;Xiang</p>
+        
+        <div class="footer">
+            <p style="font-size: 2vw;">上海第二工业大学&智能制造与控制工程学院</p>
+            <p style="font-size: 0.5vw;position: relative;color: #000;"> powered by SSPU College of Intelligent Manufacturing and Control Engineering Li Xiang</p>
         </div>
-
-
-
     </div>
 </body>
 </html>
