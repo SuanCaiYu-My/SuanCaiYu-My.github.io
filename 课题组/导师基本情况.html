@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" >
     <title>船海装备团队</title>
     
     <style>
+    p{
+        white-space:nowrap;
+        display: inline;
+
+    }
+    body{
+      background-image: url(大校徽.png);
+      background-attachment: fixed;
+      background-position: center;
+      background-size:100% 100%;
+      }
     .标题栏 {
         width: 100%;
         position: fixed;
@@ -48,7 +59,6 @@
         font-family: "kaiti";
         text-align: center;
     }
-
     .footer {
         text-align: center;
         background-color: #004FA2;
@@ -57,6 +67,38 @@
         opacity: 0.9;
         color: white;
     }
+    .kongbai{
+        height: 8vw;
+        background-color: white;
+        opacity: 0;
+    }
+    .context{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
+    }
+    .box-fixed{
+            width: 15vw;
+            height:40vw;
+            background-color:#004FA2;
+            position: fixed;
+            left: 8%;
+            top:10vw;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5vw;
+            color: white;
+            opacity: 0.8;
+
+        }
+        a{
+          text-decoration: none;
+          color: white;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -82,9 +124,51 @@
                 </div>
             </div>
         </div>
+        <div class="kongbai">
+        </div>
+        <div class="box-fixed">
+            <br>
+            <p><a href="课题组介绍.html">团队基本情况</a></p>
+            <br><br>
+            <p><a href="导师基本情况.html">导师基本情况</a></p>
+            <br><br>
+            <p><a href="研究生基本情况.html">研究生基本情况</a></p>
+        </div>
+
+        <div class="context" >
+            <p style="font-size: 50px;position: relative;"><strong>导师基本情况</strong></p><br><br>
+            <table width="80%" align="center" valign="center">
+                <tr>
+                    <td>照片</td>
+                    <td>照片</td>
+            
+                </tr>
+                <tr>
+                    <td>崔立</td>
+                    <td>李宁</td>
+                </tr>
+                <tr align="center" valign="center" height="100px">
+                    <td> &emsp;</td>
+                    <td> &emsp;</td>
+                </tr>
+                <tr>
+                    <td>照片</td>
+                    <td>照片</td>
+            
+                </tr>
+                <tr>
+                    <td>梁彩平</td>
+                    <td>牛文旭</td>
+                </tr>
+            </table>
+            <br><br>
+
+
+        </div>
+
         
         <div class="footer">
-            <p style="font-size: 2vw;">上海第二工业大学&智能制造与控制工程学院</p>
+            <p style="font-size: 2vw;">上海第二工业大学&智能制造与控制工程学院</p><br>
             <p style="font-size: 0.5vw;position: relative;color: #000;"> powered by SSPU College of Intelligent Manufacturing and Control Engineering Li Xiang</p>
         </div>
     </div>
